@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="names.js"></script>
+    <script src="scripts.js"></script>
+    <title>Font Preview</title>
+  </head>
+  <body>
+    <div id="searchImage">
+      <img src="search.png" id="displaySearch">
+    </div>
+    <div id="extra">
+      <br>
+      <input type="text" id="search" autocomplete="off">
+      <br>
+      <br>
+      <div id="results"></div>
+    </div>
+    <div id="app">
+      <div id="choices">
+        <div class="choice" id="choice1">
+          <div id="chosenAlphabet"></div>
+          <input type="range" class="slider" step="1" min="0" id="alphabets" value="0">
+        </div>
+        <div class="choice" id="choice2">
+          <div id="chosenName"></div>
+          <input type="range" class="slider" step="1" min="0" id="names" value="0">
+        </div>
+      </div>
+      <br>
+      <br>
+      <div id="preview"></div>
+    </div>
+  </body>
+</html>
