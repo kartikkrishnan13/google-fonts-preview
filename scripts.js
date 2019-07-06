@@ -46,7 +46,11 @@ $(document).ready(function() {
     }
     $('#preview').css('font-family', currentName);
     pangramIndex = Math.floor(Math.random() * pangrams.length);
-    $('#preview').html(pangrams[pangramIndex]);
+    let previewText = "";
+    previewText += pangrams[pangramIndex].toLowerCase() + "<br><br>";
+    previewText += pangrams[pangramIndex].toUpperCase() + "<br><br>";
+    previewText += "0123456789";
+    $('#preview').html(previewText);
   });
   $('#names').trigger('input');
 
